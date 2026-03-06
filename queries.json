@@ -1,0 +1,184 @@
+[
+  {
+    "table": "imagem_lote",
+    "query": "SELECT img, uuid , dt_foto FROM gm_imagem.imagem_lote WHERE 1=1 {checkpoint_filter} ORDER BY dt_foto",
+    "checkpoint": {
+      "type": "timestamp",
+      "field": "dt_foto"
+    },
+    "type": "",
+    "bucket": "",
+    "prefix": "gm_imagem/",
+    "sufix": "img/",
+    "compression": false,
+    "parallelism": 4
+  },
+  {
+    "table": "imagem_lote",
+    "query": "SELECT preview, uuid, dt_foto FROM gm_imagem.imagem_lote WHERE 1=1 {checkpoint_filter} ORDER BY dt_foto",
+    "checkpoint": {
+      "type": "timestamp",
+      "field": "dt_foto"
+    },
+    "type": "",
+    "bucket": "",
+    "prefix": "gm_imagem/",
+    "sufix": "preview/",
+    "compression": false,
+    "parallelism": 4
+  },
+  {
+    "table": "imagem_lote",
+    "query": "SELECT thumbnail, uuid, dt_foto FROM gm_imagem.imagem_lote WHERE 1=1 {checkpoint_filter} ORDER BY dt_foto",
+    "checkpoint": {
+      "type": "timestamp",
+      "field": "dt_foto"
+    },
+    "type": "",
+    "bucket": "",
+    "prefix": "gm_imagem/",
+    "sufix": "thumbnail/",
+    "compression": false,
+    "parallelism": 4
+  },
+  {
+    "table": "imagem_edificacao",
+    "query": "SELECT img, uuid , dt_foto FROM gm_imagem.imagem_edificacao WHERE 1=1 {checkpoint_filter} ORDER BY dt_foto",
+    "checkpoint": {
+      "type": "timestamp",
+      "field": "dt_foto"
+    },
+    "type": "",
+    "bucket": "",
+    "prefix": "gm_imagem/",
+    "sufix": "img/",
+    "compression": false,
+    "parallelism": 4
+  },
+  {
+    "table": "imagem_edificacao",
+    "query": "SELECT preview, uuid, dt_foto FROM gm_imagem.imagem_edificacao WHERE 1=1 {checkpoint_filter} ORDER BY dt_foto",
+    "checkpoint": {
+      "type": "timestamp",
+      "field": "dt_foto"
+    },
+    "type": "",
+    "bucket": "",
+    "prefix": "gm_imagem/",
+    "sufix": "preview/",
+    "compression": false,
+    "parallelism": 4
+  },
+  {
+    "table": "imagem_edificacao",
+    "query": "SELECT thumbnail, uuid, dt_foto FROM gm_imagem.imagem_edificacao WHERE 1=1 {checkpoint_filter} ORDER BY dt_foto",
+    "checkpoint": {
+      "type": "timestamp",
+      "field": "dt_foto"
+    },
+    "type": "",
+    "bucket": "",
+    "prefix": "gm_imagem/",
+    "sufix": "thumbnail/",
+    "compression": false,
+    "parallelism": 4
+  },
+  {
+    "table": "imagem_unidade",
+    "query": "SELECT img, uuid , dt_foto FROM gm_imagem.imagem_unidade WHERE 1=1 {checkpoint_filter} ORDER BY dt_foto",
+    "checkpoint": {
+      "type": "timestamp",
+      "field": "dt_foto"
+    },
+    "type": "",
+    "bucket": "",
+    "prefix": "gm_imagem/",
+    "sufix": "img/",
+    "compression": false,
+    "parallelism": 4
+  },
+  {
+    "table": "imagem_unidade",
+    "query": "SELECT preview, uuid, dt_foto FROM gm_imagem.imagem_unidade WHERE 1=1 {checkpoint_filter} ORDER BY dt_foto",
+    "checkpoint": {
+      "type": "timestamp",
+      "field": "dt_foto"
+    },
+    "type": "",
+    "bucket": "",
+    "prefix": "gm_imagem/",
+    "sufix": "preview/",
+    "compression": false,
+    "parallelism": 4
+  },
+  {
+    "table": "imagem_unidade",
+    "query": "SELECT thumbnail, uuid, dt_foto FROM gm_imagem.imagem_unidade WHERE 1=1 {checkpoint_filter} ORDER BY dt_foto",
+    "checkpoint": {
+      "type": "timestamp",
+      "field": "dt_foto"
+    },
+    "type": "",
+    "bucket": "",
+    "prefix": "gm_imagem/",
+    "sufix": "thumbnail/",
+    "compression": false,
+    "parallelism": 4
+  },
+  {
+    "table": "imagem_logradouro_secao",
+    "query": "SELECT img, uuid , dt_foto FROM gm_imagem.imagem_logradouro_secao WHERE 1=1 {checkpoint_filter} ORDER BY dt_foto",
+    "checkpoint": {
+      "type": "timestamp",
+      "field": "dt_foto"
+    },
+    "type": "",
+    "bucket": "",
+    "prefix": "gm_imagem/",
+    "sufix": "img/",
+    "compression": false,
+    "parallelism": 4
+  },
+  {
+    "table": "imagem_logradouro_secao",
+    "query": "SELECT preview, uuid, dt_foto FROM gm_imagem.imagem_logradouro_secao WHERE 1=1 {checkpoint_filter} ORDER BY dt_foto",
+    "checkpoint": {
+      "type": "timestamp",
+      "field": "dt_foto"
+    },
+    "type": "",
+    "bucket": "",
+    "prefix": "gm_imagem/",
+    "sufix": "preview/",
+    "compression": false,
+    "parallelism": 4
+  },
+  {
+    "table": "imagem_logradouro_secao",
+    "query": "SELECT thumbnail, uuid, dt_foto FROM gm_imagem.imagem_logradouro_secao WHERE 1=1 {checkpoint_filter} ORDER BY dt_foto",
+    "checkpoint": {
+      "type": "timestamp",
+      "field": "dt_foto"
+    },
+    "type": "",
+    "bucket": "",
+    "prefix": "gm_imagem/",
+    "sufix": "thumbnail/",
+    "compression": false,
+    "parallelism": 4
+  },
+  {
+    "table": "relatorio",
+    "query": "SELECT arquivo , id , dt_inclusao FROM gm_storage.relatorio WHERE 1=1 {checkpoint_filter} ORDER BY dt_inclusao",
+    "checkpoint": {
+      "type": "timestamp",
+      "field": "dt_inclusao"
+    },
+    "type": "",
+    "bucket": "",
+    "prefix": "gm_storage/",
+    "sufix": "arquivo/",
+    "compression": false,
+    "parallelism": 4
+   }
+]
